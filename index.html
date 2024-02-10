@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Password Generator</h1>
+      <div class="password_box">
+        <span id="result"></span>
+        <span class="material-symbols-outlined" id="copyText">content_copy</span>
+      </div>
+
+      <label for="characterAmountNumber">Number Of Characters</label>
+      <div class="character-amount-container">
+        <input
+          type="range"
+          min="7"
+          max="30"
+          value="10"
+          id="characterAmountRange"
+        />
+        <input
+          class="number-input"
+          type="number"
+          min="7"
+          max="30"
+          value="10"
+          id="characterAmountNumber"
+        />
+      </div>
+      <input type="checkbox" id="upperCaseEL" name="options" /><label
+        >Include Uppercase</label
+      ><br />
+      <input type="checkbox" id="lowerCaseEl" name="options" /><label
+        >Include Lowercase</label
+      ><br />
+      <input type="checkbox" id="symbolsEL" name="options" /><label
+        >Include Symbols</label
+      ><br />
+      <input type="checkbox" id="numbersEL" name="options" /><label
+        >Include Number</label
+      ><br />
+
+      <button id="btn">Generate Password</button>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
